@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Overpass+Mono');
+@import url('https://fonts.googleapis.com/css?family=Satisfy');
+
+.appetizers {
+	.menu-item {
+		background-color:#ACEFD8;
+	}
+}
+.appetizers, .entrees {
+	max-width:30em;
+	h2 {
+		font-family: 'Satisfy', cursive;
+		font-size:2.5em;
+		margin-bottom:0;
+		text-align: center;
+	}
+}
+body { 
+	background-image: url(https://subtlepatterns.com/patterns/restaurant_icons.png);
+}
+.container {
+	margin:0 auto;
+	max-width:80em;
+}
+.entrees {
+	.menu-item {
+		background-color:#FA8C57;
+	}
+}
+.flex-column {
+	display:flex;
+	flex-direction:column;
+}
+.flex-row {
+	display:flex;
+	flex-direction:row;
+}
+.flex-wrap {
+	flex-wrap:wrap;
+}
+.flex-center {
+	justify-content:center;
+}
+.menu {
+	font-family: 'Overpass Mono', monospace; 
+}
+.menu-heading {
+	font-family: 'Satisfy', cursive;	
+	font-size:calc(2em + 3vw);
+	margin-bottom:0;
+	text-align:center;
+}
+.menu-item {
+	max-height:15em;
+	margin:1em;
+	padding:.25em;
+	max-width:25em;
+}
+.menu-item-description {
+	margin:0;
+}

@@ -1,0 +1,25 @@
+extends layout
+
+block content
+	.container
+		h1.menu-heading Ristorante Moderno
+
+		.menu.flex-row.flex-wrap.flex-center
+			.appetizers
+				h2 Appetizers
+				each item in menu					
+					if item.type == "Appetizer"
+						.menu-item 
+							span.menu-item-title #{item.name} 
+							span -
+							span.menu-item-price  #{item.price}
+							p.menu-item-description #{item.description}
+			.entrees
+				h2 Entrees				
+				each item in menu					
+					if item.type == "Entree"
+						.menu-item 
+							span.menu-item-name #{item.name} 
+							span -
+							span.menu-item-price  #{item.price}
+							p.menu-item-description #{item.description}
