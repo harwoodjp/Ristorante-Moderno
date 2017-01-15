@@ -7,19 +7,17 @@ block content
 		.menu.flex-row.flex-wrap.flex-center
 			.appetizers
 				h2 Appetizers
-				each item in menu					
-					if item.type == "Appetizer"
-						.menu-item 
-							span.menu-item-title #{item.name} 
-							span -
-							span.menu-item-price  #{item.price}
-							p.menu-item-description #{item.description}
+				each appetizer in appetizers					
+					.menu-item 
+						span.menu-item-title #{appetizer.name} 
+						span -
+						span.menu-item-price  #{appetizer.price}
+						p.menu-item-description #{appetizer.description}
 			.entrees
 				h2 Entrees				
-				each item in menu					
-					if item.type == "Entree"
-						.menu-item 
-							span.menu-item-name #{item.name} 
-							span -
-							span.menu-item-price  #{item.price}
-							p.menu-item-description #{item.description}
+				each entree in entrees					
+					.menu-item 
+						span.menu-item-name #{entree.name} 
+						span -
+						span.menu-item-price  #{entree.price}
+						p.menu-item-description #{entree.description}

@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Overpass+Mono');
+/*@import url('https://fonts.googleapis.com/css?family=Overpass+Mono');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+@import url('https://fonts.googleapis.com/css?family=Ledger');*/
+@import url('https://fonts.googleapis.com/css?family=Arimo');
 @import url('https://fonts.googleapis.com/css?family=Satisfy');
 
 .appetizers {
@@ -20,7 +23,6 @@ body {
 }
 .container {
 	margin:0 auto;
-	max-width:80em;
 }
 .entrees {
 	.menu-item {
@@ -42,7 +44,7 @@ body {
 	justify-content:center;
 }
 .menu {
-	font-family: 'Overpass Mono', monospace; 
+	font-family: 'Arimo', sans-serif;
 }
 .menu-heading {
 	font-family: 'Satisfy', cursive;	
@@ -51,9 +53,11 @@ body {
 	text-align:center;
 }
 .menu-item {
+    box-shadow: 5px 5px 5px #888888;	
+	line-height:1.5em;	
 	max-height:15em;
 	margin:1em;
-	padding:.25em;
+	padding:.5em;
 	max-width:25em;
 }
 .menu-item-description {

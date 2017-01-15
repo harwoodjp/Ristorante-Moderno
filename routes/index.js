@@ -6,11 +6,14 @@ var fs = require('fs');
 router.get('/', function(req, res, next) {
 
   fs.readFile('public/data/menu.json', function(err,data) {
+  	 var appetizers = [], entrees = [];
   	 var menu = JSON.parse(data);
-  	 res.render('index', {menu:menu} );
+  	 menu.forEach(function(item) {
+  	 	if (item.type == "Appetizer") appetizers.push(item);
+  	 	else if (item.type == "Entree") entrees.push(item);
+  	 });
+  	 res.render('index', {appetizers:appetizers, entrees:entrees} );
   })
-
-
  
 });
 
